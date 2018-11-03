@@ -1,0 +1,23 @@
+<!--components/dialog/index.wxml-->
+<view class='wrap' wx:if='{{setDialog.dialogVisible}}'>
+  <!-- 遮罩层 -->
+  <view class='mask' wx:if='{{setDialog.maskVisible}}' catchtouchstart="_hideView"></view>
+  <!-- 模态框盒子水平居中 -->
+  <view class='main' style="transform:translate({{setDialog.dialogType === 'alert' ? '-50%,-50%' : '-50%,0'}});top:{{setDialog.dialogType === 'alert' ? '50%' : '200rpx'}}">
+    <!-- 标题 -->
+    <text class='title' wx:if="{{setDialog.setTit.visible}}">{{setDialog.setTit.title}}</text>
+    <!-- 正文 -->
+    <view class='content'>
+      <slot></slot>
+    </view>
+    <!-- footer 按钮 -->
+    <!-- 提示 -->
+    <view class='full_btn_container' wx:if="{{setDialog.dialogType === 'alert'}}">
+      <text class='xw_full_botton' bindtap="callback">确定</text>
+    </view>
+    <!-- 自定义 -->
+    <view class='btn_container' wx:if="{{setDialog.dialogType === 'custom'}}">
+      <button formType="submit" style='background:{{setBtn.bg}}' class='xw_botton'>{{setDialog.setBtn.text}}</button>
+    </view>
+  </view>
+</view>

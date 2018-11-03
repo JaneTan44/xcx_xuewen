@@ -1,0 +1,47 @@
+<!--giftcare.wxml-->
+<view class="gift_card_wrap">
+  <view class="htm_background">
+    <image mode='widthFix' wx:for="{{imgArr}}" wx:key="idx" wx:for-item="item" src='{{item}}'></image>
+  </view>
+  <view class="content_info">
+    <view class="tr_msg">
+      <text>注册并邀请加入商学院，</text>
+      <text>即可获得奖学金!</text>
+    </view>
+    <view class="btn_container">
+      <text bindtap="register" class="xw_botton">立即注册</text>
+    </view>
+    <view class="register_lc">
+      <image mode='widthFix' src="https://img.52xuewen.com/activity/static/20181028/lc.png"></image>
+    </view>
+  </view>
+</view>
+<xw-dialog setDialog="{{setDialog}}" bind:callback="submit">
+  <view class='giftcard_dialog'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="input_box">
+        <label class='iconfont icon-phone'></label>
+        <input type="text" placeholder="请输入公司名称" name="co_name" />
+      </view>
+      <view class="input_box">
+        <label class='iconfont icon-phone'></label>
+        <input type="text" placeholder="请输入联系人姓名" name="co_contacts" />
+      </view>
+      <view class="input_box">
+        <label class='iconfont icon-phone'></label>
+        <input type="number" placeholder="请输入手机号" name="co_number" />
+      </view>
+      <view>
+        <view class="input_box code">
+          <label class='iconfont icon-sey-Shield'></label>
+          <input type="text" placeholder="请输入验证码" name="code" />
+        </view>
+        <text class='xw_botton xw_code'>获取验证码</text>
+      </view>
+      <view class="input_box">
+        <label class='iconfont icon-phone'></label>
+        <input type="number" placeholder="请输入卡号" name="card" />
+      </view>
+    </form>
+  </view>
+</xw-dialog>

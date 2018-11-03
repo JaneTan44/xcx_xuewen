@@ -1,0 +1,78 @@
+/* components/dialog/index.wxss */
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  width: 80%;
+  position: fixed;
+  z-index: 101;
+  margin: 0 auto;
+  text-align: center;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  top: 200rpx;
+  display: block;
+  border-radius: 8rpx;
+  background: #fff;
+  box-shadow: 0 0 2rpx 2rpx rgba(0, 0, 0, 0.1), 0 2rpx 2rpx 0 rgba(0, 0, 0, 0.1);
+}
+.content{
+  padding: 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.title {
+  display: block;
+  letter-spacing: 2rpx;
+  height:84rpx;
+  line-height:84rpx;
+  background:rgba(21,125,203,1);
+  color: #fff;
+  font-size:40rpx;
+  font-weight: 400;
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 8rpx;
+  box-shadow: 0 0 2rpx 2rpx rgba(0, 0, 0, 0.1), 0 2rpx 2rpx 0 rgba(21,125,203,.1);
+}
+.xw_botton{
+  margin: 0 auto;
+  width: 290rpx;
+  font-size:32rpx;
+  background: #4cb2eb;
+  text-align: center;
+  display: block;
+  color: #fff;
+  border-radius: 30rpx;
+  padding: 8rpx 40rpx;
+  box-sizing: border-box;
+}
+.xw_full_botton{
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #0bb20c;
+  font-size:32rpx;
+}
+.btn_container{
+  margin-bottom: 40rpx;
+}
+.full_btn_container{
+  border-top: 2rpx solid #d5d5d6;
+}

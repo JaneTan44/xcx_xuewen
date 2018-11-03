@@ -1,0 +1,58 @@
+{
+  "usingComponents": {
+    "xw-dialog": "/components/dialog/index"
+  },
+  "pages": [
+    "pages/activity/giftcard/index",
+    "pages/activity/giftcard/personalReg",
+    "pages/activity/giftcard/invitePage",
+    "pages/activity/giftcard/loginSucess",
+    "pages/coursetory/index",
+    "pages/account/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hi/index",
+    "static/js"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4cb2eb",
+    "navigationBarTitleText": "学问网",
+    "navigationBarTextStyle": "dark"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#666",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/img/home.png",
+        "selectedIconPath": "/static/img/home_curr.png"
+      },
+      {
+        "pagePath": "pages/coursetory/index",
+        "text": "课程库",
+        "iconPath": "/static/img/more.png",
+        "selectedIconPath": "/static/img/more_curr.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的学习",
+        "iconPath": "/static/img/learn.png",
+        "selectedIconPath": "/static/img/learn_curr.png"
+      },
+      {
+        "pagePath": "pages/account/index",
+        "text": "我的",
+        "iconPath": "/static/img/my.png",
+        "selectedIconPath": "/static/img/my_curr.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

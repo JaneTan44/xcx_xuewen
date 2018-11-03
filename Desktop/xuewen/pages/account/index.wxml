@@ -1,0 +1,9 @@
+<view class="user_page">
+<view class="user_face_box">
+<image bindtap="toLink" src="../../static/img/user_face.png"></image>
+
+</view>
+<view class="user_name">{{ username }}</view>
+<view class="user_desc"> {{ desc }}</view>
+
+</view>

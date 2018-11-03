@@ -1,0 +1,34 @@
+/**app.wxss**/
+@import '/static/icon/icon.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn_container {
+  width: 100%;
+}
+
+.xw_botton {
+  width: 290rpx;
+  font-size:32rpx;
+  background: #4cb2eb;
+  text-align: center;
+  display: block;
+  color: #fff;
+  border-radius: 30rpx;
+  padding: 8rpx 40rpx;
+  box-sizing: border-box;
+  margin: 40rpx auto 0;
+}
